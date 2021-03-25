@@ -1,0 +1,106 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L USB3150-30-130-A:USB3150-30-130-A J1
+U 1 1 605B9BF6
+P 5700 3800
+F 0 "J1" H 5930 3846 50  0000 L CNN
+F 1 "USB3150-30-130-A" H 5930 3755 50  0000 L CNN
+F 2 "kicad_custom:GCT_USB3150-30-130-A" H 5700 3800 50  0001 L BNN
+F 3 "" H 5700 3800 50  0001 L BNN
+F 4 "GCT" H 5700 3800 50  0001 L BNN "MANUFACTURER"
+F 5 "7.23mm" H 5700 3800 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "Manufacturer recommendations" H 5700 3800 50  0001 L BNN "STANDARD"
+F 7 "A2" H 5700 3800 50  0001 L BNN "PARTREV"
+	1    5700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Female J2
+U 1 1 605BAB78
+P 4600 3700
+F 0 "J2" H 4492 4085 50  0000 C CNN
+F 1 "Conn_01x05_Female" H 4492 3994 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 4600 3700 50  0001 C CNN
+F 3 "~" H 4600 3700 50  0001 C CNN
+	1    4600 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3500 5300 3500
+Wire Wire Line
+	5300 3900 5300 4100
+Connection ~ 5300 3900
+Text Label 5150 3500 0    50   ~ 0
+VBUS
+Text Label 5150 3900 0    50   ~ 0
+GND
+Text Label 5150 3700 0    50   ~ 0
+D+
+Text Label 5150 3600 0    50   ~ 0
+D-
+Text Label 5150 3800 0    50   ~ 0
+ID
+$Comp
+L Device:Thermistor_PTC TH1
+U 1 1 605BEEE9
+P 5000 3500
+F 0 "TH1" V 5235 3500 50  0000 C CNN
+F 1 "1812L110/33MR" V 5144 3500 50  0000 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 5050 3300 50  0001 L CNN
+F 3 "~" H 5000 3500 50  0001 C CNN
+	1    5000 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 3500 4800 3500
+Wire Wire Line
+	4800 3600 5300 3600
+Wire Wire Line
+	4800 3700 5300 3700
+Wire Wire Line
+	4800 3800 5300 3800
+Wire Wire Line
+	4800 3900 5300 3900
+$Comp
+L Device:LED D1
+U 1 1 605C311F
+P 4300 2750
+F 0 "D1" H 4293 2495 50  0000 C CNN
+F 1 "LTST-C190KRKT" H 4293 2586 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4300 2750 50  0001 C CNN
+F 3 "~" H 4300 2750 50  0001 C CNN
+	1    4300 2750
+	-1   0    0    1   
+$EndComp
+Text Label 4450 2750 0    50   ~ 0
+GND
+$Comp
+L Device:R R1
+U 1 1 605C3E7D
+P 3900 2750
+F 0 "R1" V 3693 2750 50  0000 C CNN
+F 1 "150" V 3784 2750 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3830 2750 50  0001 C CNN
+F 3 "~" H 3900 2750 50  0001 C CNN
+	1    3900 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 2750 4150 2750
+Text Label 3750 2750 2    50   ~ 0
+VBUS
+$EndSCHEMATC
