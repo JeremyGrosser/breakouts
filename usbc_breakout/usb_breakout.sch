@@ -17,8 +17,8 @@ $Comp
 L Connector:Conn_01x05_Female J2
 U 1 1 605BAB78
 P 4600 3700
-F 0 "J2" H 4492 4085 50  0000 C CNN
-F 1 "Conn_01x05_Female" H 4492 3994 50  0000 C CNN
+F 0 "J2" H 4650 3700 50  0000 C CNN
+F 1 "Conn_01x05_Female" H 4492 3994 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 4600 3700 50  0001 C CNN
 F 3 "~" H 4600 3700 50  0001 C CNN
 	1    4600 3700
